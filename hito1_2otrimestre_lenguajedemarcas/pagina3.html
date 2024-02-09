@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="pagina.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina2.html">XML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina3.html">JSON</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina4.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="article">
+                <h1>Artículo sobre JSON</h1>
+                <h2>Historia:</h2>
+                <p>
+                    XML fue desarrollado en la década de 1990 por un grupo de trabajo del World Wide Web Consortium (W3C).
+                    Fue diseñado como un formato de marcado que permite a los usuarios definir sus propias etiquetas y estructuras de datos,
+                    lo que lo hace altamente flexible y adaptable a una variedad de propósitos.</p>
+
+                <h2 id="categoria4">Sintaxis:</h2>
+
+                <p>Los tipos de datos disponibles con JSON son:
+
+                    Números: Se permiten números negativos y opcionalmente pueden contener parte fraccional separada por puntos. Ejemplo:
+                    123.456
+                    Cadenas: Representan secuencias de cero o más caracteres. Se ponen entre doble comilla y se permiten cadenas de escape.
+                    Ejemplo: "Hola"
+                    Booleanos: Representan valores booleanos y pueden tener dos valores: true y false
+                    null: Representan el valor nulo.
+                    Array: Representa una lista ordenada de cero o más valores los cuales pueden ser de cualquier tipo. Los valores se
+                    separan por comas y
+                    el vector se mete entre corchetes. Ejemplo ["juan","pedro","jacinto"]
+                    Objetos: Son colecciones no ordenadas de pares de la forma separados por comas y puestas entre llaves.
+                        El nombre tiene que ser una cadena entre comillas dobles. El valor puede ser de cualquier tipo. Ejemplo:</p>
+                <img src="json2.png" class="img-fluid" alt="estructurajson">
+
+
+                <h2 id="categoria5">Modelos de procesamiento:</h2>
+                <p>Al ser JSON un formato muy extendido para el intercambio de datos, se han desarrollado API para distintos lenguajes
+                    (por ejemplo ActionScript, C, C++, C#, ColdFusion, Common Lisp, Delphi, E, Eiffel, Java, JavaScript, ML, Objective-C, Objective
+                    CAML, Perl, PHP, Python, Rebol, Ruby, Lua y Visual FoxPro) que permiten analizar sintácticamente, generar, transformar y procesar
+                    este tipo de dato. Los modelos de programación más utilizados para tratar con JSON en los distintos lenguajes son:10​
+
+                    Modelo de objeto: El JSON completo es almacenado en memoria en un formato de árbol. Este árbol es navegado, analizado
+                    y modificado con las API apropiadas. Como lo carga todo en memoria y luego lo procesa este modelo consume muchos recursos.
+                    Sin embargo, es muy flexible para manipular el contenido. Este modelo es permitido por ejemplo en Java por la JSR 353 y por la
+                    biblioteca Jackson.
+                    Modelo de flujo: Los datos son leídos o escritos en bloques. Por ejemplo, cada vez que se lee un bloque, el analizador genera
+                    eventos apropiados para indicar el tipo de bloque de que se trata. El cliente puede procesar el contenido escuchando los eventos
+                    apropiados. Además, es el cliente el que decide como se va leyendo el JSON permitiendo parar o saltar contenidos en mitad del proceso.
+                    El proceso de escritura tiene propiedades análogas. Por ejemplo, este modelo es permitido en java por la JSR 353.
+                    Convirtiendo los objetos JSON en objetos del lenguaje. En Java esto es realizado por ejemplo por las bibliotecas Jackson y Gson.</p>
+                <img src="json4.jpg" class="img-fluid" alt="estructurajson">
+
+                <h2 id="categoria6">Uso de JSON:</h2>
+                <p>En teoría, es trivial analizar JSON en JavaScript usando la función JSON.parse() incorporada en el lenguaje. Por ejemplo:
+                    miObjeto = JSON.parse(json_datos);
+                    En la práctica, las consideraciones de seguridad por lo general recomiendan no usar eval sobre datos crudos y debería usarse
+                    un analizador JavaScript distinto para garantizar la seguridad. El analizador proporcionado por JSON.org usa
+                    eval() en su función de análisis, protegiéndola con una expresión regular de forma que la función sólo ve expresiones seguras.</p>
+                <img src="json7.png" class="img-fluid" alt="estructurajson">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sidebar">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#categoria4">SINTAXIS</a></li>
+                    <li><a href="#categoria5">MODELOS</a></li>
+                    <li><a href="#categoria6">USO</a></li>
+                </ul>
+
+                <h3>Últimos Posts</h3>
+                <ul>
+                    <img src="post5.jpeg" class="img-fluid" alt="ddd">
+                    <p> El desarrollo que han experimentado los ordenadores cuánticos durante los últimos cincos años es espectacular. Varios grupos
+                        de investigación de distintos países han alcanzando la supremacía cuántica empleando propuestas tecnológicas muy diferentes.
+                        Además, los cúbits superconductores y los que están implementados sobre trampas de iones han avanzado muchísimo, y otras tecnologías de
+                        cúbits, como los átomos neutros o los iones implantados en macromoléculas, también se están consolidando como alternativas
+                        a las tecnologías más desarrolladas.</p>
+                </ul>
+
+                <h3>Síguenos en Redes Sociales</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/groups/xml.es/" target="_blank"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                    <li><a href="https://twitter.com/xml?lang=es" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a></li>
+                    <li><a href="https://www.instagram.com/xmloffice/" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="pagina.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina2.html">XML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina3.html">JSON</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagina4.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="article">
+                <h1>Artículo sobre XML</h1>
+                <h2>Historia:</h2>
+                <p>
+                    XML fue desarrollado en la década de 1990 por un grupo de trabajo del World Wide Web Consortium (W3C).
+                    Fue diseñado como un formato de marcado que permite a los usuarios definir sus propias etiquetas y estructuras de datos,
+                    lo que lo hace altamente flexible y adaptable a una variedad de propósitos.</p>
+
+                <h2 id="categoria1">Normas de uso y sintaxis:</h2>
+                 <p>   XML es un lenguaje de marcado que utiliza etiquetas para definir la estructura y el significado de los datos.
+                    Las etiquetas XML deben estar correctamente anidadas y cerradas.
+                    Los documentos XML pueden ser validados mediante DTD (Document Type Definition) o XSD (XML Schema Definition).
+                    XML es compatible con Unicode, lo que permite la representación de una amplia gama de caracteres.</p>
+                <img src="xml1.jpg" class="img-fluid" alt="aaa">
+
+                <h2 id="categoria2">Ventajas del XML</h2>
+                <p>Es extensible: Después de diseñado y puesto en producción, es posible extender XML con la adición de nuevas etiquetas,
+                    de modo que se pueda continuar utilizando sin complicación alguna.
+                    El analizador es un componente estándar, no es necesario crear un analizador específico para cada versión de lenguaje XML.
+                    Esto posibilita el empleo de cualquiera de los analizadores disponibles.
+                    De esta manera se evitan bugs y se acelera el desarrollo de aplicaciones.
+                    Si un tercero decide usar un documento creado en XML, es sencillo entender su estructura y procesarla.
+                    Mejora la compatibilidad entre aplicaciones. Podemos comunicar aplicaciones de distintas plataformas, sin que importe
+                    el origen de los datos, es decir, podríamos tener una aplicación en Linux con una base de datos Postgres y comunicarla
+                    con otra aplicación en Windows y base de datos MS-SQL Server.
+                    Transformamos datos en información, pues se les añade un significado concreto y los asociamos a un contexto, con lo cual
+                    tenemos flexibilidad para estructurar documentos.</p>
+                <img src="xml3.png" class="img-fluid" alt="bbb">
+
+                <h2 id="categoria3">Críticas</h2>
+                <p>XML y sus extensiones han sido regularmente criticadas por su nivel de detalle y complejidad.3​ El mapeo del modelo de árbol básico
+                    de XML hacia los sistema de tipos de lenguajes de programación o bases de datos puede ser difícil, especialmente cuando
+                    se utiliza XML para el intercambio de datos altamente estructurados entre aplicaciones, lo que no era su objetivo primario de diseño.
+                    Otras críticas intentan refutar la afirmación de que XML es un lenguaje autodescriptivo4​ (aunque la especificación XML no hace
+                    ninguna afirmación de este tipo). Se propone a JSON y YAML frecuentemente como alternativas,
+                    centrándose ambas en la representación de datos estructurados, en lugar de documentos narrativos.</p>
+                <img src="xml6.jpg" class="img-fluid" alt="bbb">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sidebar">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#categoria1">NORMAS</a></li>
+                    <li><a href="#categoria2">VENTAJAS</a></li>
+                    <li><a href="#categoria3">CRITICAS</a></li>
+                </ul>
+
+                <h3>Últimos Posts</h3>
+                <ul>
+                    <img src="post.jpg" class="img-fluid" alt="ddd">
+                    <p> El Consejo Mundial de Viajes y Turismo (WTTC, por sus siglas en inglés) y Microsoft, destacaron el poder transformador de la aplicación de la
+                        Inteligencia Artificial (IA) para el sector, lo que marca un compromiso con un futuro digital que ofrezca experiencias únicas a los viajeros.
+                        El reporte ‘Introduction to Artificial Intelligence (IA) Technology: Guide for Travel & Tourism Leaders’, es la primera
+                        parte de un informe completo sobre IA y resalta cómo esta herramienta está preparada para redefinir los estándares de los viajes y el turismo.
+                        El informe señala que la IA puede desempeñar un papel fundamental a la hora de ofrecer una experiencia de viaje mejorada, ahora y en el futuro.
+                        Asimismo, esta tecnología puede potenciar las recomendaciones personalizadas y las estrategias de marketing mediante el análisis de los datos de los viajeros,
+                        la optimización de las estrategias de precios a través de ajustes en tiempo real y la oferta de respuestas instantáneas e interacciones ajustadas
+                        a través de sofisticados chatbots impulsados por IA. </p>
+                </ul>
+
+                <h3>Síguenos en Redes Sociales</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/groups/xml.es/" target="_blank"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                    <li><a href="https://twitter.com/xml?lang=es" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a></li>
+                    <li><a href="https://www.instagram.com/xmloffice/" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
